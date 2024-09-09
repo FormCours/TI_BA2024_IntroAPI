@@ -73,12 +73,10 @@ Quand l'utiliser :
 Permet de définir les besoins du coté du client et d'adapté facilement les requetes.
 
 ## Quelques exemples de Web API public
-https://docs.irail.be/
-https://openweathermap.org/current
-https://nominatim.org/release-docs/latest/api/Overview/
-
+https://docs.irail.be/ \
+https://openweathermap.org/current \
+https://nominatim.org/release-docs/latest/api/Overview/ \
 https://petstore.swagger.io/
-
 
 # Utilisation d'un API
 
@@ -90,13 +88,10 @@ https://github.com/typicode/json-server
 ## Logiciel pour consommer une Web API
 - Postman\
 https://www.postman.com/
-
 - Insomnia\
 https://insomnia.rest/
-
 - Thunder Client (Extension VSC)\
 https://github.com/thunderclient/thunder-client-support
-
 - Documentation Swagger (si disponible)
 
 ## Exemple de consommer une Web API
@@ -104,8 +99,8 @@ https://github.com/thunderclient/thunder-client-support
 
 ### Documentation
 #### Client
-https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch
+https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch \
 https://rtavenar.github.io/poly_python/content/api.html
 #### Serveur
-https://flask.palletsprojects.com/en/3.0.x/
+https://flask.palletsprojects.com/en/3.0.x/ \
 https://www.moesif.com/blog/technical/api-development/Building-RESTful-API-with-Flask/
