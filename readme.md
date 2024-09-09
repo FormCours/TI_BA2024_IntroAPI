@@ -98,3 +98,14 @@ https://insomnia.rest/
 https://github.com/thunderclient/thunder-client-support
 
 - Documentation Swagger (si disponible)
+
+## Exemple de consommer une Web API
+[Exemple d'une API](/demo/consommation-webapi.html)
+
+### Documentation
+#### Client
+https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch
+https://rtavenar.github.io/poly_python/content/api.html
+#### Serveur
+https://flask.palletsprojects.com/en/3.0.x/
+https://www.moesif.com/blog/technical/api-development/Building-RESTful-API-with-Flask/

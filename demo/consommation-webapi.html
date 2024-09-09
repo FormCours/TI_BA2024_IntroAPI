@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de consommation d'une WebAPI</title>
+</head>
+<body>
+    <h1>Exemple de consommation d'une WebAPI</h1>
+    <h2>Rechercher d'un film par langue</h2>
+    <form id="form-movie">
+        <label for="input-lang">Le code de langue : </label>
+        <input id="input-lang" type="text">
+        <button type="submit">Rechercher...</button>
+    </form>
+
+    <h2>Resultat...</h2>
+    <pre id="result-movie">Pas de recherche effectué...</pre>
+
+
+    <script>
+        // Récuperation des éléments du DOM
+        const formMovie = document.getElementById('form-movie');
+        const inputLang = document.getElementById('input-lang');
+        const resultMovie = document.getElementById('result-movie');
+
+        // Abonnement à l'event de submit de la balise "form"
+        formMovie.addEventListener('submit', async (event) => {
+            // Déactivé le comportement de l'event submit (Refresh)
+            event.preventDefault();
+
+            // Requete AJAX (Rechercher les films sur une WebAPI Rest)
+            const lang = inputLang.value;
+            const response = await fetch(`http://localhost:3000/movie/?lang=${lang}`);
+            const data = await response.json();        
+            
+            // Modifier la page web avec les données recus
+            if(!data) {
+                resultMovie.innerHTML = "Aucun resultat !"
+            }
+            else {
+                resultMovie.innerHTML = JSON.stringify(data, undefined, 4);
+            }
+        });
+    </script>
+</body>
+</html>
